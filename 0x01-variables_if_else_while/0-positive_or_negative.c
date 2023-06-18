@@ -4,9 +4,9 @@
 /**
  * main - entry point
  *
- * descraption: sd
+ * Descraption: sd
  *
- * return: 0 (success)
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -14,11 +14,14 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n>0)
-	{ printf ("is positive\n");}
-	else if ( n<0 ) 
-	{ printf ("is negative\n");}
-	else if ( n==0)
-	{ printf ("is positive\n");}
+	if (n > 0)
+	{ printf("%d is positive\n", n);
+	}
+	else if (n < 0)
+	{ printf("%d is negative\n", n);
+	}
+	else if (n == 0)
+	{ printf("%d is positive\n", n);
+	}
 	return (0);
 }
