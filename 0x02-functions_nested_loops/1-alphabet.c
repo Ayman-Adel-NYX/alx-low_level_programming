@@ -3,6 +3,8 @@
 /**
  * main - check the code
  *
+ * Descraption: sd
+ *
  * Return: Always 0.
  */
 void print_alphabet(void)
