@@ -7,7 +7,8 @@
  * Return: length.
  */
 int _strlen(char *s)
-{	len = 0;
+{
+	size_t len = 0;
 
 	while (*s++)
 		len++;
