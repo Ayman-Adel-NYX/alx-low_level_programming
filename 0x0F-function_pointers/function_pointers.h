@@ -1,22 +1,11 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTIONS_POINTERS_H
 
-
+#include <stdio.h>
 #include <stdarg.h>
-
-/**
- * struct printer - A new struct type defining a printer.
- * @symbol: A symbol representing a data type.
- * @print: A function pointer to a function that prints
- *         a data type corresponding to symbol.
- */
-typedef struct printer
-{
-	char *symbol;
-	void (*print)(va_list arg);
-
-} printer_t;
-
+void print_name(char *name, void (*f)(char *));
+void array_iterator(int *array, size_t size, void (*action)(int));
+int int_index(int *array, int size, int (*cmp)(int));
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
