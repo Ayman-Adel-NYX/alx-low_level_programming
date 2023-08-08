@@ -7,13 +7,13 @@
  */
 int _strlen_recursion(char *s)
 {
-	int lont = 0;
+	int lont = 1;
 
 	if (*s)
 	{
-		lont++;
 
 		lont += _strlen_recursion(s + 1);
+		lont++;
 	}
 
 	return (lont);
